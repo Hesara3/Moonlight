@@ -216,6 +216,13 @@ nav ul li a.active{
         
     }
 
+    .header nav {
+        
+        margin-left: 56%;
+       
+       
+    }
+
 }
 
 
@@ -1150,6 +1157,7 @@ nav ul li a.active{
     .containerC{
         
         margin-left: -80px;
+        margin-top:150px;
         
         
     }
@@ -1781,21 +1789,27 @@ nav ul li a.active{
 @media screen and (max-width: 320px) {
     .course2{
         padding-top: 0;
-        margin-top: -400px;
+        margin-top: -50px;
+    }
+
+    .containerP .contentP h2{
+        font-size: 0.8rem;
+        
+        
     }
 
     .contentP a{
         position: relative;
         display: inline-block;
-        padding: 10px 20px;
+        padding: 5px 20px;
         border: 2px solid #111;
         background: transparent;
         text-transform: uppercase;
         color: #111;
         text-decoration: none;
         font-weight: 600;
-        font-size: 15px;
-        top: 7px;
+        font-size: 10px;
+        top: 45px;
     
     }
 
@@ -1814,7 +1828,7 @@ nav ul li a.active{
         transition: 0.9s;
         top: -100px;
         scale: 0.80;
-        margin-left: -24px;
+        margin-left: 0px;
         background: transparent;
     }
 
@@ -1824,7 +1838,7 @@ nav ul li a.active{
     }
 
     .containerP .contentP p{
-        font-size: 0.7rem;
+        font-size: 0.5rem;
         font-weight: 300;
         color: #000000;
         font-family: 'Catamaran', sans-serif;
@@ -2098,6 +2112,40 @@ nav ul li a.active{
     }
 }
 
+@media screen and (max-width: 425px){
+    .Info-section h1{
+        font-size: 1.7rem;
+        width: 90%;
+        text-align: center;
+        font-family: 'Barlow', sans-serif;
+        padding-bottom: 50px;
+        margin-top: 60px;
+        padding-left: 50px;
+    }
+
+    .container-info p{
+        color: #212529;
+        font-size: 0.7rem;
+        font-family: 'Barlow', sans-serif;
+        transition: 0.6s;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 10px;
+    
+    }
+    
+    .container-info h3{
+        color: #212529;
+        font-size: 1.5rem;
+        font-family: 'Barlow', sans-serif;
+        font-weight:800;
+        padding: 10px 0px;
+        transition: 0.6s;
+    
+    }
+}
+
+
 
 /* Footer section */
 
@@ -2222,7 +2270,7 @@ footer .wave#wave4{
 
 @media screen and (max-width: 500px){
     footer{
-        
+        flex-direction: column;
         padding: 20px 0px;
         
     }
@@ -2240,12 +2288,75 @@ footer .wave#wave4{
 
 @media screen and (max-width: 400px){
     footer{
-        width: 98%;
+        width: 100%;
         padding: 0;
-        margin-left: -10px;
+        margin-left: -20px;
+        
         
     }
 }
+
+@media screen and (max-width: 375px){
+    footer{
+        width: 100%;
+        padding-right: 100px;
+        padding: 0;
+        margin-left: 0px;
+        flex-direction: column;
+        
+        
+    }
+
+    footer .menuF li a{
+        font-size: 0.9em;
+        color: #fff;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    footer p{
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 320px){
+    footer{
+        width: 100%;
+        padding-right: 100px;
+        padding: 0;
+        margin-left: 0px;
+        flex-direction: column;
+        
+        
+    }
+
+    footer .menuF li a{
+        font-size: 0.6em;
+        color: #fff;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+        opacity: 0.75;
+    }
+
+    footer p{
+        color: #fff;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+}
+
+
 
 
 
