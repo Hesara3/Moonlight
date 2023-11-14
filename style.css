@@ -13,6 +13,9 @@ body{
     margin: 0;
 }
 
+
+
+
 .containerB{
     background: #102B33;
 }
@@ -69,6 +72,8 @@ nav ul li a.active{
     color: #4B93FF;
 }
 
+
+
 .Sign{
     height: 40px;
     border: 2px solid #ffffff;
@@ -78,6 +83,7 @@ nav ul li a.active{
 .Sign a{
     position: relative;
     bottom: 3px;
+    overflow: hidden;
 }
 
 
@@ -579,6 +585,21 @@ nav ul li a.active{
     padding-bottom: 1000px;
     padding-top: 80px;
     height: 2850px;
+}
+
+section .animate{
+    transition: 1s;
+}
+
+.sec-1 .animate{
+    transform: translateX(0%);
+    opacity: 0;
+   
+}
+
+.sec-1.show-animate .animate{
+    opacity: 100;
+    transition: 1s;
 }
 
 .Course h1{
@@ -1233,7 +1254,7 @@ nav ul li a.active{
 /* Products */
 
 
-.course2{
+.sec-1{
     padding-top: 50px;
 }
 
@@ -1423,14 +1444,14 @@ nav ul li a.active{
 }
 
 @media screen and (max-width: 1440px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: -100px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: -350px;
     }
@@ -1442,7 +1463,7 @@ nav ul li a.active{
 }
 
 @media screen and (max-width: 988px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: -530px;
     }
@@ -1455,7 +1476,7 @@ nav ul li a.active{
 }
 
 @media screen and (max-width: 880px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: -800px;
     }
@@ -1504,19 +1525,19 @@ nav ul li a.active{
 }
 
 @media screen and (max-width: 550px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: -400px;
         margin-top: 240px;
     }
 
     
-    .course2 h1{
+    .sec-1 h1{
          font-size: 3rem;
          margin: 0;
     }
 
-    .course2 h1{
+    .sec-1 h1{
         font-size: 2.3rem;
         margin-bottom: 100px;
    }
@@ -1571,7 +1592,7 @@ nav ul li a.active{
 
 
 @media screen and (max-width: 465px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: 0;
         margin-top: 140px;
@@ -1579,7 +1600,7 @@ nav ul li a.active{
     }
 
     
-    .course2 h1{
+    .sec-1 h1{
          font-size: 3rem;
     }
 
@@ -1612,7 +1633,7 @@ nav ul li a.active{
 }
 
 @media screen and (max-width: 425px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: -400px;
         margin-top: 100px;
@@ -1636,7 +1657,7 @@ nav ul li a.active{
     
 
     
-    .course2 h1{
+    .sec-1 h1{
          font-size: 2.3rem;
          margin-bottom: 100px;
     }
@@ -1678,7 +1699,7 @@ nav ul li a.active{
 }
 
 @media screen and (max-width: 375px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: -400px;
         margin-top: 0;
@@ -1746,7 +1767,7 @@ nav ul li a.active{
     }
 
     
-    .course2 h1{
+    .sec-1 h1{
          font-size: 2.3rem;
     }
 
@@ -1787,7 +1808,7 @@ nav ul li a.active{
 }
 
 @media screen and (max-width: 320px) {
-    .course2{
+    .sec-1{
         padding-top: 0;
         margin-top: -50px;
     }
@@ -1833,7 +1854,7 @@ nav ul li a.active{
     }
 
     
-    .course2 h1{
+    .sec-1 h1{
          font-size: 2.3rem;
     }
 
@@ -2189,6 +2210,8 @@ footer .social_icon li a:hover{
     transform: translateY(-10px);
 }
 
+
+
 footer .menuF li a{
     font-size: 1.2em;
     color: #fff;
@@ -2324,6 +2347,26 @@ footer .wave#wave4{
         margin-bottom: 10px;
         font-size: 1em;
     }
+}
+
+
+@media screen and (max-width: 360px){
+    
+
+    footer .menuF li a{
+        font-size: 0.8em;
+        color: #fff;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.5s;
+        text-decoration: none;
+        opacity: 0.75;
+        overflow-x: hidden;
+        align-items: center;
+       
+        
+    }
+
 }
 
 @media screen and (max-width: 320px){
